@@ -1,0 +1,85 @@
+.container-login {
+  background-color: #f9f9f9;
+
+  .logo-login {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    h3 {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #ff7675;
+    }
+  }
+
+  .section-left {
+    z-index: 1;
+    height: 100vh;
+    .card {
+      width: 400px;
+      position: relative;
+      left: 250px;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 0px;
+      color: #353b48;
+
+      .btn-login {
+        font-family: "Assistant", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 0px;
+        background-color: #4cc4e1;
+        border-radius: 0px;
+        color: #fff;
+
+        &:hover {
+          background-color: rgb(158, 221, 238);
+          color: #f9f9f9;
+        }
+      }
+
+      .btn-register {
+        font-family: "Assistant", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 0px;
+        border-color: #4cc4e1;
+        border-radius: 0px;
+        color: #4cc4e1;
+
+        &:hover {
+          background-color: #4cc4e1;
+          color: #f9f9f9;
+        }
+      }
+
+      .small-text-bottom {
+        font-family: "Assistant", sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        color: #9b9ca0;
+        display: inline-block;
+        line-height: 12px;
+        margin-top: 20px;
+        font-weight: 500;
+
+        .text-bottom-blue {
+          color: #0984e3;
+        }
+      }
+    }
+  }
+
+  .section-right {
+    background: url("../assets/img/bg-login.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 900px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+.container-home .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container-home .wrapper .left-side {
+  min-width: 250px;
+  max-width: 250px;
+  background: #7386d5;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.container-home .wrapper .left-side .left-side-content {
+  padding: 20px 20px;
+}
+
+.container-home .wrapper .left-side .left-side-content h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-home .wrapper .left-side .left-side-content .navbar-nav {
+  margin: 50px 0px;
+}
+
+.container-home .wrapper .left-side .left-side-content .navbar-nav .nav-item {
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.container-home .wrapper .left-side .left-side-content .navbar-nav .nav-item:hover {
+  background: #adbbf3;
+  color: #fff;
+}
+
+.container-home .wrapper .left-side .left-side-content .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+
+.container-home .wrapper .left-side .left-side-content .btn-logout {
+  position: absolute;
+  bottom: 20px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-home .wrapper .left-side .left-side-content .btn-logout:hover {
+  background: #ee7b6f;
+}
+
+.container-login {
+  background-color: #f9f9f9;
+}
+
+.container-login .logo-login {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.container-login .logo-login h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff7675;
+}
+
+.container-login .section-left {
+  z-index: 1;
+  height: 100vh;
+}
+
+.container-login .section-left .card {
+  width: 400px;
+  position: relative;
+  left: 250px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0px;
+  color: #353b48;
+}
+
+.container-login .section-left .card .btn-login {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0px;
+  background-color: #4cc4e1;
+  border-radius: 0px;
+  color: #fff;
+}
+
+.container-login .section-left .card .btn-login:hover {
+  background-color: #9eddee;
+  color: #f9f9f9;
+}
+
+.container-login .section-left .card .btn-register {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0px;
+  border-color: #4cc4e1;
+  border-radius: 0px;
+  color: #4cc4e1;
+}
+
+.container-login .section-left .card .btn-register:hover {
+  background-color: #4cc4e1;
+  color: #f9f9f9;
+}
+
+.container-login .section-left .card .small-text-bottom {
+  font-family: "Assistant", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  color: #9b9ca0;
+  display: inline-block;
+  line-height: 12px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.container-login .section-left .card .small-text-bottom .text-bottom-blue {
+  color: #0984e3;
+}
+
+.container-login .section-right {
+  background: url("../assets/img/bg-login.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 900px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-list-tables {
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding: 30px 30px;
+}
+
+.menu-list-tables h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: #130f40;
+  margin-bottom: 20px;
+}
+
+.menu-list-tables .wrapper-list {
+  padding: 20px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.menu-list-tables .wrapper-list .text-status-blue {
+  color: #00a8ff;
+}
+
+.menu-list-tables .wrapper-list .text-status-yellow {
+  color: #ffc107;
+}
+
+.menu-list-tables .wrapper-list .empty-data {
+  padding: 20px 10px;
+}
+
+.menu-list-tables .wrapper-list .empty-data p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #d63031;
+  font-weight: 600;
+  text-align: center;
+}
+
+.menu-dashboard {
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding: 30px 30px;
+}
+
+.menu-dashboard h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: #130f40;
+  margin-bottom: 20px;
+}
+
+.menu-dashboard .card-dashboard {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.menu-dashboard .card-dashboard h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #130f40;
+  margin-bottom: 20px;
+}
+
+.menu-dashboard .card-dashboard p {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: #130f40;
+  margin-bottom: 0px;
+}
+
+.wrapper-add-food {
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding: 30px 30px;
+}
+
+.wrapper-add-food h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: #130f40;
+  margin-bottom: 20px;
+}
+
+.wrapper-add-table {
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding: 30px 30px;
+}
+
+.wrapper-add-table h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: #130f40;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=main.css.map */
