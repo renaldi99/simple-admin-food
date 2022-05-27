@@ -48,7 +48,7 @@ class App extends Component {
 
   render() {
     const { statusLog, menus, tables } = this.state;
-    console.log(tables);
+    // console.log(tables);
     return (
       <div>
         {!statusLog ? (

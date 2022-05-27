@@ -8,31 +8,39 @@ class Login extends Component {
     this.state = {
       email: "",
       password: "",
-      isValid: true,
+      isValid: false,
       errorMessage: { email: "", password: "" },
     };
   }
 
   handleChange = (event) => {
-    // const { email, password } = this.state;
-    // let passwordError = "";
-    // let emailError = "";
-
-    // if (event.target.name === "password" && password.length < 7) {
-    //   this.setState({
-    //     [event.target.name]: event.target.value,
-    //     errorMessage: { password: "Password must be at least 7 characters" },
-    //   });
-    // } else if (event.target.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
-    //   this.setState({
-    //     [event.target.name]: event.target.value,
-    //     errorMessage: { email: "Invalid Format" },
-    //   });
-    // }
-
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
+    if (
+      !event.target.value.match(
+        /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/
+      ) &&
+      event.target.name === "email"
+    ) {
+      this.setState({
+        email: event.target.value,
+        errorMessage: { email: "Invalid Format Email" },
+      });
+    } else if (
+      event.target.value.length < 6 &&
+      event.target.name === "password"
+    ) {
+      this.setState({
+        password: event.target.value,
+        errorMessage: {
+          password: "Password must be at least 6 characters",
+        },
+      });
+    } else {
+      this.setState({
+        [event.target.name]: event.target.value,
+        errorMessage: { email: "", password: "" },
+        isValid: true,
+      });
+    }
   };
 
   handleSubmit = (event) => {
@@ -55,7 +63,7 @@ class Login extends Component {
   };
 
   render() {
-    const { email, password, errorMessage, isValid } = this.state;
+    const { errorMessage, isValid } = this.state;
     return (
       <div>
         <div className="container-login">
